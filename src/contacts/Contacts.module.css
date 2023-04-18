@@ -1,0 +1,39 @@
+.contactsBlock {
+    min-height: 100vh; /* 100vh - вся высота экрана устройства - делаем эт минимальным значением, максимальное при этом не ограничиваем, если будет выходить за границы экрана вниз, то ничего не поплывет*/
+    background-color: #cccc77;
+}
+
+.contactsContainer {
+    min-height: 80vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    background-color: #7f919f;
+}
+
+.inputForm {
+    border: 1px solid;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #95b9d0;
+}
+
+.button {
+    background-color: #6f8fa4;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: column;*/
+
+}

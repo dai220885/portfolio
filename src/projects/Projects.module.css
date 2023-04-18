@@ -1,0 +1,24 @@
+.projectsBlock {
+    min-height: 100vh; /* 100vh - вся высота экрана устройства - делаем эт минимальным значением, максимальное при этом не ограничиваем, если будет выходить за границы экрана вниз, то ничего не поплывет*/
+    background-color: #95cfee;
+}
+
+.projectContainer {
+    align-items: center;
+
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: #7f919f;
+}
+
+.projects {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}

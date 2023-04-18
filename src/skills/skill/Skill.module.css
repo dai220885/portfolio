@@ -1,0 +1,32 @@
+.skill {
+    width: 250px;
+    /*min-width: 250px;*/
+    /*max-width: 320px;*/
+    background-color: #80d0d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /*выравнивает строчные элементы внутри блочных*/
+    padding: 15px;
+    box-sizing: border-box; /*значение "border-box" дедает так, чтобы паддинг в 15px входил в "width: 250px", а не прибавлялся к ней*/
+    /*border: 1px solid;*/
+
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    background-color:  #909191;
+}
+
+.title {
+    /*width: 100%;*/
+    background-color: #6fb9b9;
+    max-width: 220px;
+    word-wrap: break-word;
+}
+.description {
+    max-width: 220px;
+    word-wrap: break-word;
+    background-color: #64b6b6;
+}
