@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Project.module.css';
+import style from './Project.module.scss';
 import {NavLink} from 'react-router-dom';
 
 
@@ -14,7 +14,7 @@ export const Project = (props: ProjectPropsType) => {
         <div className={style.project}>
             <div className={style.previewContainer} style={props.style}>
                 {/*<div className={style.image} > /!*пока не используем*!/*/}
-                <NavLink to="/project">View</NavLink>
+                <NavLink className={style.viewBtn} to="/project">View</NavLink>
                 {/*</div>*/}
             </div>
             <div className={style.titleAndDescContainer}>

@@ -1,13 +1,17 @@
+@import './sass/mixins';
+@import './sass/variables';
 .container {
     border: 1px solid;
     background-color: #1f1f20;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
+
+    @include text($mainFontFamily, 16px, 350, normal);
+    //font-family: 'Josefin Sans', sans-serif;
+    //color: #fff;
     text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 350;
+    //font-size: 16px;
+    //font-weight: 350;
     /*font-weight: normal;*/
-    /*line-height: 1.2;*/
+    //line-height: normal;
     /*letter-spacing: 2px;*/
     height: 100%;
     width: 80%;

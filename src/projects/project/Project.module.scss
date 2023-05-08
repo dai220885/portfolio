@@ -1,0 +1,97 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+.project {
+  width: 350px;
+  background-color: $secondBgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /*выравнивает строчные элементы внутри блочных*/
+  margin: 10px;
+  box-sizing: border-box; /*значение "border-box" дедает так, чтобы паддинг в 15px входил в "width: 250px", а не прибавлялся к ней*/
+  /*border: 1px solid;*/
+
+  .previewContainer {
+    height: 175px;
+    width: 100%;
+    //background-color: #8a9da8;
+    /*background-image: url("");*/
+    /*background-size: cover;*/
+    /*как именно будет вести себя картинка(растянуть, замостить и т.д.)*/
+    /*background-position: center;*/
+    /*для того, чтобы центр картинки совпадал с центром блока*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 40%;
+    }
+
+    .viewBtn {
+      color: $mainTextColor;
+      height: 17px;
+      width: 70px;
+      border-radius: 4px;
+      background-color: $accentColor;
+      padding-top: 5px;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      /*opacity: 95%;*/
+    }
+  }
+
+  .titleAndDescContainer {
+    padding: 15px 10px;
+    box-sizing: border-box;
+
+    .title {
+      /*width: 100%;*/
+      /*background-color: #b5b7d9;*/
+      max-width: 320px;
+      word-wrap: break-word;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+
+    .description {
+      /*width: 100%;*/
+      @include text($secondFontFamily, 13px, 100, 1.4);
+
+      //font-family: 'Poppins', sans-serif; /*Используем другой текст*/
+      //font-size: 13px;
+      //font-weight: 100;
+      font-stretch: normal;
+      //line-height: 1.4;
+      max-width: 320px;
+      word-wrap: break-word;
+      /*background-color: #979cef;*/
+      text-align: justify;
+    }
+  }
+}
+
+//.previewContainer a {
+//  color: #fff;
+//  height: 17px;
+//  width: 70px;
+//  border-radius: 4px;
+//  background-color: #252527;
+//  padding-top: 5px;
+//  text-decoration: none;
+//  position: relative;
+//  z-index: 1;
+//  /*opacity: 95%;*/
+//}
