@@ -4,6 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 
 export type ProjectPropsType = {
+    style?: {}
     projectTitle: string
     projectDescription: string
 }
@@ -11,15 +12,16 @@ export type ProjectPropsType = {
 export const Project = (props: ProjectPropsType) => {
     return (
         <div className={style.project}>
-
-            <div className={style.previewContainer}>
-                <NavLink to="/project">Link to {props.projectTitle}</NavLink>
+            <div className={style.previewContainer} style={props.style}>
+                {/*<div className={style.image} > /!*пока не используем*!/*/}
+                <NavLink to="/project">View</NavLink>
+                {/*</div>*/}
             </div>
             <div className={style.titleAndDescContainer}>
                 <h3 className={style.title}>{props.projectTitle}</h3>
-                <span className={style.description}>
+                <div className={style.description}>
                 {props.projectDescription}
-                </span>
+                </div>
             </div>
         </div>
     );

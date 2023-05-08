@@ -11,10 +11,12 @@ export const Contacts = () => {
                     <input type="text"/>
                     <input type="text"/>
                     <textarea></textarea>
+                    <div className={style.button}>
+                        <button>Отправить</button>
+                    </div>
+
                 </form>
-                <div className={style.button}>
-                    <button>Отправить</button>
-                </div>
+
 
 
             </div>

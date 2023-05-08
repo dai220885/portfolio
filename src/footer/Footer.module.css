@@ -1,6 +1,7 @@
 .footerBlock {
     /*min-height: 100vh; !* 100vh - вся высота экрана устройства - делаем эт минимальным значением, максимальное при этом не ограничиваем, если будет выходить за границы экрана вниз, то ничего не поплывет*!*/
     background-color: #bd5151;
+    padding: 70px 0;
 }
 
 .footerContainer {
@@ -43,4 +44,14 @@
     font-size: small;
     /*flex-direction: column;*/
 
+}
+
+@media screen and (max-width: 353px){
+    .socialNetworksContainer {
+        width: 100%;
+        justify-content: center;
+    }
+    .copyright {
+        width: 100%;
+    }
 }
