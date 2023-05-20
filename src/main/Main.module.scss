@@ -1,0 +1,46 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+  min-height: 100vh;
+  //background-color: #b3b6b6;
+  background-color: $mainBgColor;
+  padding: 70px 0;
+
+  .text {
+    //background-color: #d09cd5;
+    background-color: $mainBgColor;
+    width: 300px;
+    @include text($secondFontFamily, 18px, 100, 1.4);
+    font-stretch: normal;
+    max-width: 320px;
+    word-wrap: break-word;
+    text-align: justify;
+    //h1 {
+    //  margin: 0;
+    //  //font-weight: 350;
+    //  //font-size: 36px;
+    //  //line-height: 1.2;
+    //
+    //  @include text($mainFontFamily, 36px, 350, 1.2);
+    //  //text-transform: capitalize;
+    //  //letter-spacing: 5px;
+    //}
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-color: $secondBgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+}
+
+
+

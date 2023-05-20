@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './Footer.module.css';
+import style from './Footer.module.scss';
 import styleContainer from '../common/styles/Container.module.scss';
 
 export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Дылевич Александр</h2>
+                <h2 className={style.title}>Alexandr Dylevich</h2>
                 <div className={style.socialNetworksContainer} >
                     <div className={style.network}></div>
                     <div className={style.network}></div>
@@ -14,7 +14,7 @@ export const Footer = () => {
                     <div className={style.network}></div>
                 </div>
                 <div className={style.copyright}>
-                    © Все права защищены
+                    © All rights reserved
                 </div>
 
 

@@ -69,7 +69,6 @@
     .description {
       /*width: 100%;*/
       @include text($secondFontFamily, 13px, 100, 1.4);
-
       //font-family: 'Poppins', sans-serif; /*Используем другой текст*/
       //font-size: 13px;
       //font-weight: 100;

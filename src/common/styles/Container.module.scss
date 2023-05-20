@@ -7,7 +7,7 @@
     @include text($mainFontFamily, 16px, 350, normal);
     //font-family: 'Josefin Sans', sans-serif;
     //color: #fff;
-    text-transform: capitalize;
+    //text-transform: capitalize;
     //font-size: 16px;
     //font-weight: 350;
     /*font-weight: normal;*/
@@ -21,13 +21,13 @@
     justify-content: space-between;
     flex-wrap: wrap; /*чтобы элементы переходили на следующую строчку, если не влазят в одну*/
 }
-
+h1 {
+    margin: 0;
+    @include text($mainFontFamily, 36px, 350, 1.2);
+}
 
 h3 {
     margin: 0;
-    font-weight: 350;
-    text-transform: capitalize;
-    font-size: 24px;
-    line-height: 1.2;
+    @include text($mainFontFamily, 24px, 350, 1.2);
     letter-spacing: 3px;
 }

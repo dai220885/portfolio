@@ -1,0 +1,102 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.contactsBlock {
+    min-height: 30vh; /* 100vh - вся высота экрана устройства - делаем эт минимальным значением, максимальное при этом не ограничиваем, если будет выходить за границы экрана вниз, то ничего не поплывет*!*/
+    background-color: $mainBgColor;
+    padding: 70px 0;
+    .contactsContainer {
+        /*min-height: 100%;*/
+        /*align-items: center;*/
+        flex-direction: column;
+        justify-content: space-between;
+        //.title {
+        //    background-color: #7f919f;
+        //}
+        .inputForm {
+            //border: 1px solid;
+            width: 280px;
+            /*width: 100%;*/
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /*justify-content: center;*/
+            /*flex-wrap: wrap;*/
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: $mainBgColor;
+            .fields {
+                background-color: $secondBgColor; /* Цвет фона */
+                color: $mainTextColor; /* Цвет текста */
+
+            }
+
+            .textArea{
+                height: 70px;
+                max-width: 98%;
+            }
+
+            .buttonContainer {
+                background-color: $mainBgColor;
+                /*height: 40px;*/
+                /*width: 120px;*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /*flex-direction: column;*/
+                .button {
+                    background-color: $accentColor;
+                    /*height: 40px;*/
+                    /*width: 120px;*/
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    height: 27px;
+                    width: 70px;
+                    border-radius: 4px;
+                    /*flex-direction: column;*/
+                    @include text($mainFontFamily, 15px, 350, 1.4);
+
+
+                }
+
+            }
+
+
+            @media screen and (max-width: 350px){
+                    width: 100%;
+            }
+            @media screen and (min-width: 700px){
+                    width: 50%;
+            }
+
+            @media screen and (min-width: 1280px){
+                    width: 40%;
+            }
+
+
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 350px){
+    .inputForm {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .inputForm {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .inputForm {
+        width: 40%;
+    }
+}

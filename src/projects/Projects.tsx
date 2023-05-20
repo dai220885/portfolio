@@ -17,6 +17,7 @@ export const Projects = () => {
     const counterStyle = {
         backgroundImage: `url(${counterProjectImg})`,
     }
+
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectContainer}`}>
