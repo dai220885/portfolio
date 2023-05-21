@@ -21,10 +21,17 @@
             /*flex-wrap: wrap;*/
             padding: 5px;
             box-sizing: border-box;
+
             .network {
                 width: 60px;
                 height: 60px;
-                background-color: #656554;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: small;
+                background-size: cover;
+                background-position: center;
+                position: relative;
             }
             @media screen and (max-width: 353px){
                     width: 100%;
