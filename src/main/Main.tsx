@@ -6,7 +6,6 @@ import mainAvatar from '../assets/images/Main-avatar.png'
 export const Main = () => {
     return (
         <div className={style.mainBlock}>
-
             <div className={styleContainer.container}>
                 {/*<h1> I am a cool man</h1>*/}
                 <div className={style.text}>
