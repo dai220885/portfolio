@@ -7,10 +7,10 @@ import { faReact } from '@fortawesome/free-brands-svg-icons/faReact';
 import {faJs} from '@fortawesome/free-brands-svg-icons/faJs';
 //import {faHTML5Logo} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import tsIcon from '../assets/images/skills/brand-typescript-svgrepo-com.svg';
-import reduxIcon from '../assets/images/skills/redux-fill-svgrepo-com.svg';
-import cssIcon from '../assets/images/skills/css3-01-svgrepo-com.svg';
-import htmlIcon from '../assets/images/skills/html5-01-svgrepo-com.svg';
+import tsIcon from '../assets/images/skills/brand-typescript-svgrepo-com.png';
+import reduxIcon from '../assets/images/skills/redux-fill-svgrepo-com.png';
+import cssIcon from '../assets/images/skills/css3-01-svgrepo-com.png';
+import htmlIcon from '../assets/images/skills/html5-01-svgrepo-com.png';
 //import {faTypescript} from '@fortawesome/free-brands-svg-icons';
 
 export const Skills = () => {
