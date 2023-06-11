@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Project.module.scss';
 import {NavLink} from 'react-router-dom';
+import Button from 'common/components/button/Button';
 
 
 export type ProjectPropsType = {
@@ -10,11 +11,15 @@ export type ProjectPropsType = {
 }
 
 export const Project = (props: ProjectPropsType) => {
-    return (
+  //TODO описать онклик, чтобы навигейтило на проект
+  return (
         <div className={style.project}>
             <div className={style.previewContainer} style={props.style}>
                 {/*<div className={style.image} > /!*пока не используем*!/*/}
-                <NavLink className={style.viewBtn} to="/project">View</NavLink>
+
+                {/*<NavLink className={style.viewBtn} to="/project">View</NavLink>*/}
+
+                <Button buttonValue={'View'}/>
                 {/*</div>*/}
             </div>
             <div className={style.titleAndDescContainer}>
