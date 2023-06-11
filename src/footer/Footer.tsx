@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons/faInstagram';
 import {faTelegram} from '@fortawesome/free-brands-svg-icons/faTelegram';
 import {faAt} from '@fortawesome/free-solid-svg-icons/faAt';
-import gitHubIcon from '../assets/images/footer/github.svg';
-import instagramIcon from '../assets/images/footer/instagram.svg';
-import emailIcon from '../assets/images/footer/at-solid.svg';
-import telegramIcon from '../assets/images/footer/telegram.svg';
+import gitHubIcon from '../assets/images/footer/github_white.svg';
+import instagramIcon from '../assets/images/footer/instagram_white.svg';
+import emailIcon from '../assets/images/footer/email_white.svg';
+import telegramIcon from '../assets/images/footer/telegram_white.svg';
 
 export const Footer = () => {
     return (
