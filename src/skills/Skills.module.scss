@@ -1,6 +1,7 @@
+@import '../common/styles/sass/variables';
 .skillsBlock {
     min-height: 100vh; /* 100vh - вся высота экрана устройства - делаем эт минимальным значением, максимальное при этом не ограничиваем, если будет выходить за границы экрана вниз, то ничего не поплывет*/
-    background-color: #1f1f20;
+    background-color: $mainBgColor;
     padding: 70px 0;
     .skillsContainer {
         align-items: center;
