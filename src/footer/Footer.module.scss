@@ -25,13 +25,16 @@
             .network {
                 width: 60px;
                 height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                //display: flex;
+                //justify-content: center;
+                //align-items: center;
                 font-size: small;
                 background-size: cover;
                 background-position: center;
                 position: relative;
+                .img {
+                    z-index: 2;
+                }
             }
             @media screen and (max-width: 353px){
                     width: 100%;

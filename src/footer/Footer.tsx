@@ -11,13 +11,17 @@ import emailIcon from '../assets/images/footer/email_white.svg';
 import telegramIcon from '../assets/images/footer/telegram_white.svg';
 
 export const Footer = () => {
+    //TODO вместо отдельных дивок с соцсетями сделать компоненту
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.title}>Alexandr Dylevich</h2>
                 <div className={style.socialNetworksContainer} >
-                    <div className={style.network} style={{backgroundImage: `url(${gitHubIcon})`}}>
+                    <div className={style.network}>
                         {/*<FontAwesomeIcon icon={faInstagram} className={style.network}/>*/}
+                        <a href="https://github.com/dai220885">
+                            <img src={gitHubIcon} alt="github"/>
+                        </a>
                     </div>
                     <div className={style.network} style={{backgroundImage: `url(${instagramIcon})`}}>
                         {/*<FontAwesomeIcon icon={faTelegram} className={style.network}/>*/}

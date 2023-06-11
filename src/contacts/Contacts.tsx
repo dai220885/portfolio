@@ -13,10 +13,9 @@ export const Contacts = () => {
                 {/*<h2 className={style.title}>Contacts</h2>*/}
                 <Title title='Contacts'/>
                 <form className={style.inputForm}>
-                    <input className={style.fields} type="text"/>
-                    <input className={style.fields} type="text"/>
+                    <input className={style.input} type="text"/>
+                    <input className={style.input} type="text"/>
                     <textarea className={`${style.textArea} ${style.fields}`}></textarea>
-
                     <div className={style.buttonContainer}>
                         {/*<button className={style.button}>Send</button>*/}
                         <Button buttonValue={'Send'}/>

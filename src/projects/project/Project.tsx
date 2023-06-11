@@ -16,9 +16,7 @@ export const Project = (props: ProjectPropsType) => {
         <div className={style.project}>
             <div className={style.previewContainer} style={props.style}>
                 {/*<div className={style.image} > /!*пока не используем*!/*/}
-
                 {/*<NavLink className={style.viewBtn} to="/project">View</NavLink>*/}
-
                 <Button buttonValue={'View'}/>
                 {/*</div>*/}
             </div>
