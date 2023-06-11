@@ -45,23 +45,17 @@
                 align-items: center;
                 justify-content: center;
                 /*flex-direction: column;*/
-                .button {
-                    background-color: $accentColor;
-                    /*height: 40px;*/
-                    /*width: 120px;*/
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                    height: 27px;
-                    width: 70px;
-                    border-radius: 4px;
-                    /*flex-direction: column;*/
-                    @include text($mainFontFamily, 15px, 350, 1.4);
-
-
-                }
-
+                //.button {
+                //    background-color: $accentColor;
+                //    display: flex;
+                //    align-items: center;
+                //    justify-content: center;
+                //    color: white;
+                //    height: 27px;
+                //    width: 70px;
+                //    border-radius: 4px;
+                //    @include text($mainFontFamily, 15px, 350, 1.4);
+                //}
             }
 
 
