@@ -9,7 +9,7 @@ import {Fade} from 'react-awesome-reveal';
 export const Contacts = () => {
 	//TODO стилизовать поля в форме (замечание от Светланы)
 	return (
-		<div className={style.contactsBlock}>
+		<div id = 'contacts' className={style.contactsBlock}>
 			<Fade cascade damping={0.2}>
 			<div className={`${styleContainer.container} ${style.contactsContainer}`}>
 				{/*<h2 className={style.title}>Contacts</h2>*/}
