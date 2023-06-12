@@ -30,7 +30,11 @@ export const Footer = () => {
 									<img src={gitHubIcon} alt="github"/>
 								</a>
 							</div>
-							<div className={style.network} style={{backgroundImage: `url(${instagramIcon})`}}>
+							<div className={style.network}>
+								<a href="https://instagram.com/dylevich_alexandr?igshid=NGExMmI2YTkyZg==">
+									<img src={instagramIcon} alt="instagram"/>
+								</a>
+
 								{/*<FontAwesomeIcon icon={faTelegram} className={style.network}/>*/}
 							</div>
 							<div className={style.network} style={{backgroundImage: `url(${emailIcon})`}}>
