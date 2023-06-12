@@ -1,0 +1,34 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.nav {
+    //border: 1px solid;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    background-color: $mainBgColor;
+    margin-right: 10px;
+    a {
+        @include text($mainFontFamily, 20px, 350, 1.4);
+        color: $mainTextColor;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: $accentColor;
+        }
+    }
+    .activeLink {
+        color: $accentColor;
+    }
+@media screen and (max-width: 500px){
+    display: none;
+}
+
+}
+
+//.nav a {
+//    @include text($mainFontFamily, 20px, 350, 1.4);
+//    color: $mainTextColor;
+//    text-decoration: none;
+//}
+
