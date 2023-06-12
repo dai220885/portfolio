@@ -1,4 +1,21 @@
+@import './common/styles/sass/variables';
+@import './common/styles/sass/mixins';
+
 .App {
+  > div {
+    &:nth-child(n) {
+      background-color: $mainBgColor;
+    }
+    &:nth-child(2n) {
+      background-color: $secondBgColor;
+    }
+
+  }
+
+
+
+
+
   /*text-align: center;*/
 }
 
