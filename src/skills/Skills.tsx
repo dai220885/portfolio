@@ -35,7 +35,7 @@ export const Skills = () => {
     const descriptionForCss= 'Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien. Donec ut est in lectus consequat consequat.\n' + 'Etiam eget dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique.\n' + 'Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n' + 'Nunc ac magna. Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis felis.\n'
     const descriptionForHtml= 'Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.\n' + 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.\n' + 'Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.\n' + 'Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.\n'
     return (
-        <div className={style.skillsBlock}>
+        <div id = 'skills' className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 {/*<h2 className={style.title}>Skills</h2>*/}
                 <Title title={'Skills'}/>
