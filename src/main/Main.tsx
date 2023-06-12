@@ -6,7 +6,9 @@ import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles';
 import { Fade } from "react-awesome-reveal";
 import telegramIcon from '../assets/images/footer/telegram_white.svg';
-
+import ReactTypingEffect from 'react-typing-effect';
+import { Tilt } from 'react-tilt'
+import {inspect} from 'util';
 const particlesOpt = {
 	particles: {
 		number: {
@@ -348,7 +350,11 @@ const particlesOpt4 = {
 		},
 	},
 };
-
+const tiloOptions = {
+	max: 15,
+	speed: 100,
+	transition: true,
+	scale: 1}
 
 const particlesInit = async (main: any) => {
 	console.log(main);
@@ -361,27 +367,30 @@ const particlesInit = async (main: any) => {
 
 export const Main = () => {
 	return (
-		<div className={style.mainBlock}>
+		<div id = 'main' className={style.mainBlock}>
 			{/*<Particles className={style.particles} params={particlesOpt}/>*/}
 			{/*<Particles className={style.particles} params={particlesOpt}/>*/}
-
-
 				<div className={styleContainer.container}>
+						<Particles id="particles-here" init={particlesInit} options={particlesOpt5}/>
 					<Fade >
 					{/*<h1> I am a cool man</h1>*/}
 					<div className={style.text}>
 						<span>Hi</span>
 						<span> I am Alexandr <span>Dylevich</span></span>
-						<h1>frontend developer</h1>
+						<span><ReactTypingEffect
+							text={'frontend developer'}
+							speed={100}
+							typingDelay={700}/></span>
+						{/*<h1>frontend developer</h1>*/}
 					</div>
-					<div className={style.imgContainer}>
-						<div className={style.photo} style={{backgroundImage: `url(${mainAvatar})`}}></div>
-					</div>
-					{/*<Particles id="particles-here" init={particlesInit} options={particlesOpt5}/>*/}
+						<Tilt options={tiloOptions}>
+							<div className={style.imgContainer}>
+								<div className={style.photo} style={{backgroundImage: `url(${mainAvatar})`}}>
+								</div>
+							</div>
+						</Tilt>
 					</Fade>
 				</div>
-
-
 		</div>
 	);
 }
