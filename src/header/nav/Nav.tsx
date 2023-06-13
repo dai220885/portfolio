@@ -27,14 +27,14 @@ export const Nav = () => {
 				activeClass={style.activeLink}
 				to='projects' spy={true}
 				smooth={true}
-				offset={-70}
+				offset={-60}
 				duration={500}>Projects </Link>
 			{/*<a href="#contacts">Contacts</a>*/}
 			<Link
 				activeClass={style.activeLink}
 				to='contacts' spy={true}
 				smooth={true}
-				offset={-70}
+				offset={-60}
 				duration={500}>Contacts </Link>
 
 
